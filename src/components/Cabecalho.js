@@ -1,24 +1,34 @@
-import { Tooltip } from "flowbite-react";
+import Logo from '../assets/imgs/logo.png';
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 
 function Cabecalho() {
   return (
-    <Navbar fluid rounded className="bg-transparent p-0 sm:p-0 select-none">
-      <div className="flex md:order-2">
-      <Tooltip content="sendme a message" animation="duration-500" placement="bottom"  style="light" arrow={false}>
-        <a href="https://wa.me/9492080296" target="_blank"><Button className="bg-[#56ab2f]" data-tooltip-target="tooltip-animation">contact me</Button></a>
-      </Tooltip>
-        <NavbarToggle />
-      </div>
-      <NavbarCollapse>
-        <NavbarLink href="#" className="text-white font-bold">
-          home
-        </NavbarLink>
-        <NavbarLink href="#projetos" className="text-white font-normal">projects</NavbarLink>
-        <NavbarLink href="#contato" className="text-white font-normal">contact</NavbarLink>
-      </NavbarCollapse>
-    </Navbar>
+    <div className="flex justify-center">
+      <section className="w-9/12">
+
+        <Navbar fluid rounded>
+        <NavbarBrand href="">
+          <img src={Logo} className="mr-3 h-6 sm:h-9" alt="FIBRAX LOGO" />
+        </NavbarBrand>
+        <div className="flex md:order-2">
+          
+          <Button>Get started</Button>
+          <NavbarToggle />
+        </div>
+        <NavbarCollapse>
+          <NavbarLink href="#" className='text-[#D0542E] font-bold'>
+            Início
+          </NavbarLink>
+          <NavbarLink href="#">About</NavbarLink>
+          <NavbarLink href="#">Services</NavbarLink>
+          <NavbarLink href="#">Pricing</NavbarLink>
+          <NavbarLink href="#">Contact</NavbarLink>
+        </NavbarCollapse>
+        </Navbar>
+        
+      </section>
+    </div>
   );
 }
 
-export default Cabecalho
+export default Cabecalho;
