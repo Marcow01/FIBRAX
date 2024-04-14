@@ -8,8 +8,14 @@ function Corpo() {
         <div className="flex flex-wrap items-center">
 
           <div className="md:w-1/2">
-            <a className="text-[#FF6100] text-4xl font-semibold cursor-default text-justify">Transforme cada entrada em uma experiência memorável!</a>
-            <p className="text-[#282729] text-lg text-justify mt-5">cada entrada em uma experiência memorável com nossos tapetes personalizados, criando um primeiro impacto que perdura.</p>
+          <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl">
+            Transforme a entrada em algo especial com nossos <span className="text-[#FF6100]">capachos personalizados.</span>
+          </h1>
+
+            <p class="lg:text-lg text-1xl text-gray-400">
+            nossos capachos personalizados são a chave para uma entrada que marca presença, garantindo que cada visita seja uma experiência <span className="text-[#FF6100] font-bold">memorável</span> e <span className="text-[#FF6100] font-bold">acolhedora</span>.
+            </p>
+            
             <Button className="bg-[#FF6100] mt-2">Conheça</Button>
           </div>
 

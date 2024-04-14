@@ -24,8 +24,10 @@ function Descricao() {
                   <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white'>
                     <IoMdColorPalette className='w-5 h-5'/>
                   </div>
-                  <p class="text-lg mt-4 mb-2 font-semibold text-[#282729]">Variedade de cores</p>
-                  <p class="leading-relaxed mb-3 text-justify text-[#282729]">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo. </p>
+
+                  <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Variedade de cores</h1>
+                  <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo.</p>
+              
                 </div>
               </div>
             </div>
@@ -37,8 +39,10 @@ function Descricao() {
                   <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white'>
                     <FaShieldHalved className='w-5 h-5'/>
                   </div>
-                  <p class="text-lg mt-4 mb-2 font-semibold text-[#282729]">Material de alta qualidade</p>
-                  <p class="leading-relaxed mb-3 text-justify text-[#282729]">Capacho emborrachados com resistência a grande tráfego, facilidade de higienização, aderência ao solo e resistência ao calor.</p>
+              
+                  <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Variedade de cores</h1>
+                  <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo.</p>
+               
                 </div>
               </div>
             </div>
@@ -50,8 +54,8 @@ function Descricao() {
                   <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white'>
                     <FaPenNib className='w-5 h-5'/>
                   </div>
-                  <p class="text-lg mt-4 mb-2 font-semibold text-[#282729]">Capachos personalizados</p>
-                  <p class="leading-relaxed mb-3 text-justify text-[#282729]">Oferecemos capachos personalizados, projetados para atender às suas preferências individuais e criar uma primeira impressão memorável para qualquer visitante.</p>
+                  <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Variedade de cores</h1>
+                  <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo.</p>
                 </div>
               </div>
             </div>

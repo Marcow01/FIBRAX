@@ -6,6 +6,7 @@ import Sobre from './components/Sobre';
 import Clientes from './components/Clientes';
 import Carrossel from './components/Carrossel';
 import Contato from './components/Contato';
+import Marcas from './components/Marcas';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Descricao></Descricao>
       <Sobre></Sobre>
       <Clientes></Clientes>
+      {/*<Marcas></Marcas>*/}
       <Contato></Contato>
     </div>
   );

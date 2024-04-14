@@ -1,9 +1,3 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import Marca1 from '../assets/imgs/marcas/image 52.png';
-import Marca2 from '../assets/imgs/marcas/image 53.png';
-import Marca3 from '../assets/imgs/marcas/image 54.png';
-import Marca4 from '../assets/imgs/marcas/image 55.png';
 import Isa from '../assets/imgs/clientes/isa.png';
 import Thiago from '../assets/imgs/clientes/thiago.png';
 import Roger from '../assets/imgs/clientes/roger.png';
@@ -13,11 +7,18 @@ function Clientes() {
   return (  
     <div className="flex justify-center">
       <section className="w-7/12 mt-16">
-      <p className="text-[#FF6100] text-4xl font-semibold cursor-default text-center mb-10">Oque nossos clientes dizem</p>
 
-        <div className='flex'>
+      <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center">
+        Por que escolher <span className="text-[#FF6100]">FIBRAX?</span>
+      </h1>
+
+      <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center">
+        Descubra o que nossos clientes estão dizendo sobre nós! Explore os testemunhos e depoimentos que destacam a qualidade excepcional.
+      </p>
+
+        <div className='flex mt-16'>
           <img src={Isa} alt="" className='w-12 h-12'/>
-          <div className='p-4 rounded-lg bg-[#D0542E] ml-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-gray-400 ml-4 w-1/2'>
             <p className='text-justify text-white'>O tapete é de qualidade e pode ser feito com sua marca. Fica lindo! Adorei.</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -32,7 +33,7 @@ function Clientes() {
         </div>
 
         <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-[#D0542E] mr-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-gray-400 mr-4 w-1/2'>
             <p className='text-justify text-white'>Produto de excelente qualidade, entrega dentro do prazo e atendimento cordial! Recomendo!</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -49,7 +50,7 @@ function Clientes() {
 
         <div className='flex mt-4'>
           <img src={Roger} alt="" className='w-12 h-12'/>
-          <div className='p-4 rounded-lg bg-[#D0542E] ml-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-gray-400 ml-4 w-1/2'>
             <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias 😍😍 …</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -64,7 +65,7 @@ function Clientes() {
         </div>
 
         <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-[#D0542E] mr-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-gray-400 mr-4 w-1/2'>
             <p className='text-justify text-white'>Recebi os tapetes após um prazo maior que o informado para produção. Entretanto gostei bastante da qualidade do material!</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />

@@ -7,8 +7,13 @@ function Carrossel() {
     <div className="flex justify-center">
 
       <section className="w-9/12 px-5">
-      <p className="text-[#FF6100] text-4xl font-semibold cursor-default text-center">Nossos Produtos</p>
-      <p className="lg:w-1/2 mx-auto text-[#282729] text-lg text-center mt-5">Escolha dentre infinitas possibilidades de cores a melhor combinação para que seu tapete tenha a sua identidade.</p>
+      <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center">
+          Nossos <span className="text-[#FF6100]">produtos.</span>
+      </h1>
+
+      <p class="lg:text-lg lg:w-1/2 mx-auto text-1xl text-gray-400 text-center">
+      Escolha dentre infinitas possibilidades de cores a melhor combinação para que seu tapete tenha a sua identidade.
+      </p>
 
         <Swiper
             spaceBetween={50}
