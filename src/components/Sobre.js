@@ -42,7 +42,7 @@ function Sobre() {
         
         </div>
 
-        <div className="md:w-1/2 flex justify-end p-10">
+        <div className="md:w-1/2 flex justify-end md:p-10 p-2">
 
           <img src={Nota} alt="Descrição da imagem" className="w-full h-auto object-cover object-center"/>
         </div>
