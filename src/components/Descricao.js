@@ -29,7 +29,7 @@ function Descricao() {
       distance: "10px",
       scale: 1,
       easing: "ease",
-      reset: true
+
     };
 
     ScrollReveal().reveal(boxRef1.current,{ ...config, delay: 200 });
