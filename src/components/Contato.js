@@ -27,15 +27,14 @@ function Contato() {
     ScrollReveal().reveal(boxRef2.current, { ...config, delay: 300 });
     ScrollReveal().reveal(boxRef3.current, { ...config, origin: "rigth" });
     ScrollReveal().reveal(boxRef4.current, { ...config, origin: "right", delay: 200, distance: "30px"});
-
     ScrollReveal().reveal(boxRef5.current, { ...config, origin: "right", delay: 250  });
-
     ScrollReveal().reveal(boxRef6.current, { ...config, origin: "left", delay: 200 , distance: "30px" });
+    
   }, []);
 
   return (
-    <div className="flex justify-center mt-32 mb-32">
-       <section class="body-font relative w-9/12">
+    <div className='w-full md:w-9/12 md:p-0 px-8 mx-auto mb-16 mt-16'>
+       <section>
 
         <div>
           <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl" ref={boxRef1}>

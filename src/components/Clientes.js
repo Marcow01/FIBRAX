@@ -43,85 +43,81 @@ function Clientes() {
     ScrollReveal().reveal(boxRef10.current, { ...config, origin: "right", delay: 300 , distance: "30px" });
   }, []);
 
-  return (  
-    <div className="flex justify-center mb-16">
-      <section className="w-7/12 mt-16">
-
+  return (
+    <div class="w-full md:w-1/2 md:p-0 px-8 mx-auto mb-16 mt-16">
       <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center" ref={boxRef1}>
         Por que escolher <span className="text-[#FF6100]">FIBRAX?</span>
       </h1>
-
+  
       <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center" ref={boxRef2}>
         Descubra o que nossos clientes estão dizendo sobre nós! Explore os testemunhos e depoimentos que destacam a qualidade excepcional.
       </p>
-
-        <div className='flex mt-16'>
+  
+      <div className='flex flex-col mt-16'>
+        <div className='mb-4 flex'>
           <img src={Isa} alt="" className='w-12 h-12' ref={boxRef3}/>
-          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 w-1/2' ref={boxRef4}>
+          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 flex-grow' ref={boxRef4}>
             <p className='text-justify text-white'>O tapete é de qualidade e pode ser feito com sua marca. Fica lindo! Adorei.</p>
             <Rating className='mb-3 mt-2'>
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
             </Rating>
-
             <p className='text-end text-white font-semibold'>Isabele Melgaço</p>
           </div>
         </div>
-
-        <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 w-1/2' ref={boxRef6}>
+  
+        <div className='mb-4 flex'>
+          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 flex-grow' ref={boxRef6}>
             <p className='text-justify text-white'>Produto de excelente qualidade, entrega dentro do prazo e atendimento cordial! Recomendo!</p>
             <Rating className='mb-3 mt-2'>
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
             </Rating>
-
             <p className='text-end text-white font-semibold'>Thiago Stacanelli</p>
           </div>
           <img src={Thiago} alt="" className='w-12 h-12' ref={boxRef5}/>
         </div>
-
-        <div className='flex mt-4'>
+  
+        <div className='mb-4 flex'>
           <img src={Roger} alt="" className='w-12 h-12' ref={boxRef7}/>
-          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 w-1/2' ref={boxRef8}>
+          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 flex-grow' ref={boxRef8}>
             <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias 😍😍 …</p>
             <Rating className='mb-3 mt-2'>
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
             </Rating>
-
             <p className='text-end text-white font-semibold'>Roger Rodrigues</p>
           </div>
         </div>
-
-        <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 w-1/2' ref={boxRef10}>
+  
+        <div className='flex'>
+          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 flex-grow' ref={boxRef10}>
             <p className='text-justify text-white'>Recebi os tapetes após um prazo maior que o informado para produção. Entretanto gostei bastante da qualidade do material!</p>
             <Rating className='mb-3 mt-2'>
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
-            <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
             </Rating>
-
             <p className='text-end text-white font-semibold'>Breno Anselmo</p>
           </div>
-          <img ref={boxRef9} src="https://lh3.googleusercontent.com/a-/ALV-UjWcKsXka0y7nBaYoAAdH0QVzdMIHBnmMGzpj8867AzaO_7VjzYm=w36-h36-p-rp-mo-ba3-br100" alt="" className='w-12 h-12'/>
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjWcKsXka0y7nBaYoAAdH0QVzdMIHBnmMGzpj8867AzaO_7VjzYm=w36-h36-p-rp-mo-ba3-br100" alt="" className='w-12 h-12' ref={boxRef9}/>
         </div>
-
-      </section>
+      </div>
     </div>
   );
+  
+  
 }
 
 export default Clientes;

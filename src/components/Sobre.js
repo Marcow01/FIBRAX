@@ -25,7 +25,7 @@ function Sobre() {
 
   return (
     <div className="flex justify-center bg-[#D0542E]">
-      <section className="w-9/12 h-screen mt-16">
+      <section className="w-full md:w-9/12 mt-16 p-8 md:p-0 mb-16">
       <div className="flex flex-wrap items-center h-full">
 
         <div className="md:w-1/2">
@@ -44,7 +44,7 @@ function Sobre() {
 
         <div className="md:w-1/2 flex justify-end">
 
-          {/*<img src={Nota} alt="Descrição da imagem" className="max-w-96 h-auto"/>*/}
+          <img src={Nota} alt="Descrição da imagem" className="max-w-96 h-auto"/>
         </div>
       </div>
       </section>
