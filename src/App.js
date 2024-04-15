@@ -17,7 +17,7 @@ function App() {
       <Descricao></Descricao>
       <Sobre></Sobre>
       <Clientes></Clientes>
-      {/*<Marcas></Marcas>*/}
+      <Marcas></Marcas>
       <Contato></Contato>
     </div>
   );

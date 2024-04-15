@@ -3,22 +3,61 @@ import Thiago from '../assets/imgs/clientes/thiago.png';
 import Roger from '../assets/imgs/clientes/roger.png';
 import { Rating } from "flowbite-react";
 
+import React, { useRef, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+
 function Clientes() {
+  const boxRef1 = useRef(null);
+  const boxRef2 = useRef(null);
+  const boxRef3 = useRef(null);
+  const boxRef4 = useRef(null);
+  const boxRef5 = useRef(null);
+  const boxRef6 = useRef(null);
+  const boxRef7 = useRef(null);
+  const boxRef8 = useRef(null);
+  const boxRef9 = useRef(null);
+  const boxRef10 = useRef(null);
+
+  useEffect(() => {
+    const config = {
+      origin: "top",
+      delay: 200,
+      distance: "10px",
+      scale: 1,
+      easing: "ease",
+      reset: true
+    };
+
+    ScrollReveal().reveal(boxRef1.current,{ ...config, delay: 200 });
+    ScrollReveal().reveal(boxRef2.current, { ...config, delay: 250 });
+    ScrollReveal().reveal(boxRef3.current, { ...config, origin: "left", distance: "30px" });
+    ScrollReveal().reveal(boxRef4.current, { ...config, origin: "left", delay: 300 , distance: "30px" });
+
+    ScrollReveal().reveal(boxRef5.current, { ...config, origin: "right", distance: "30px" });
+    ScrollReveal().reveal(boxRef6.current, { ...config, origin: "right", delay: 300 , distance: "30px" });
+
+    ScrollReveal().reveal(boxRef7.current, { ...config, origin: "left", distance: "30px" });
+    ScrollReveal().reveal(boxRef8.current, { ...config, origin: "left", delay: 300 , distance: "30px" });
+
+    ScrollReveal().reveal(boxRef9.current, { ...config, origin: "right", distance: "30px" });
+    ScrollReveal().reveal(boxRef10.current, { ...config, origin: "right", delay: 300 , distance: "30px" });
+  }, []);
+
   return (  
-    <div className="flex justify-center">
+    <div className="flex justify-center mb-16">
       <section className="w-7/12 mt-16">
 
-      <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center">
+      <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center" ref={boxRef1}>
         Por que escolher <span className="text-[#FF6100]">FIBRAX?</span>
       </h1>
 
-      <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center">
+      <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center" ref={boxRef2}>
         Descubra o que nossos clientes estão dizendo sobre nós! Explore os testemunhos e depoimentos que destacam a qualidade excepcional.
       </p>
 
         <div className='flex mt-16'>
-          <img src={Isa} alt="" className='w-12 h-12'/>
-          <div className='p-4 rounded-lg bg-gray-400 ml-4 w-1/2'>
+          <img src={Isa} alt="" className='w-12 h-12' ref={boxRef3}/>
+          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 w-1/2' ref={boxRef4}>
             <p className='text-justify text-white'>O tapete é de qualidade e pode ser feito com sua marca. Fica lindo! Adorei.</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -33,7 +72,7 @@ function Clientes() {
         </div>
 
         <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-gray-400 mr-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 w-1/2' ref={boxRef6}>
             <p className='text-justify text-white'>Produto de excelente qualidade, entrega dentro do prazo e atendimento cordial! Recomendo!</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -45,12 +84,12 @@ function Clientes() {
 
             <p className='text-end text-white font-semibold'>Thiago Stacanelli</p>
           </div>
-          <img src={Thiago} alt="" className='w-12 h-12'/>
+          <img src={Thiago} alt="" className='w-12 h-12' ref={boxRef5}/>
         </div>
 
         <div className='flex mt-4'>
-          <img src={Roger} alt="" className='w-12 h-12'/>
-          <div className='p-4 rounded-lg bg-gray-400 ml-4 w-1/2'>
+          <img src={Roger} alt="" className='w-12 h-12' ref={boxRef7}/>
+          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 w-1/2' ref={boxRef8}>
             <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias 😍😍 …</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -65,7 +104,7 @@ function Clientes() {
         </div>
 
         <div className='flex justify-end mt-4'>
-          <div className='p-4 rounded-lg bg-gray-400 mr-4 w-1/2'>
+          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 w-1/2' ref={boxRef10}>
             <p className='text-justify text-white'>Recebi os tapetes após um prazo maior que o informado para produção. Entretanto gostei bastante da qualidade do material!</p>
             <Rating className='mb-3 mt-2'>
             <Rating.Star />
@@ -77,7 +116,7 @@ function Clientes() {
 
             <p className='text-end text-white font-semibold'>Breno Anselmo</p>
           </div>
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjWcKsXka0y7nBaYoAAdH0QVzdMIHBnmMGzpj8867AzaO_7VjzYm=w36-h36-p-rp-mo-ba3-br100" alt="" className='w-12 h-12'/>
+          <img ref={boxRef9} src="https://lh3.googleusercontent.com/a-/ALV-UjWcKsXka0y7nBaYoAAdH0QVzdMIHBnmMGzpj8867AzaO_7VjzYm=w36-h36-p-rp-mo-ba3-br100" alt="" className='w-12 h-12'/>
         </div>
 
       </section>

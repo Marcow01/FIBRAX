@@ -1,7 +1,28 @@
 import { Button } from "flowbite-react";
 import Nota from '../assets/imgs/nota.png'; 
 
+import React, { useRef, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+
 function Sobre() {
+  const boxRef1 = useRef(null);
+  const boxRef2 = useRef(null);
+  const boxRef3 = useRef(null);
+
+  useEffect(() => {
+    const config = {
+      origin: "left",
+      delay: 200,
+      distance: "10px",
+      scale: 1,
+      easing: "ease",
+      reset: true
+    };
+
+    ScrollReveal().reveal(boxRef1.current,{ ...config, delay: 200});
+    ScrollReveal().reveal(boxRef2.current, { ...config, delay: 300 });
+  }, []);
+
   return (
     <div className="flex justify-center bg-[#D0542E]">
       <section className="w-9/12 h-screen mt-16">
@@ -9,11 +30,11 @@ function Sobre() {
 
         <div className="md:w-1/2">
 
-        <h1 class="font-bold title-font mb-4 text-white lg:text-4xl text-3xl">
+        <h1 class="font-bold title-font mb-4 text-white lg:text-4xl text-3xl" ref={boxRef1}>
           Conheça nossa equipe.
         </h1>
         
-        <p class="lg:text-lg text-1xl text-white text-justify">
+        <p class="lg:text-lg text-1xl text-white text-justify" ref={boxRef2}>
         Empenhados em entregar qualidade por um ótimo preço a <span className="font-bold">FIBRAX CAPACHOS </span>atua no mercado desde 2018, conquistando clientes e criando sua marca em tapetes personalizados. 
         </p>
 

@@ -10,7 +10,9 @@ function Marcas() {
     <div className="flex justify-center">
       <section className="w-9/12">
 
-      <p className="lg:w-1/2 mx-auto text-[#282729] text-lg text-center mt-5 mb-5">Escolha dentre infinitas possibilidades de cores a melhor combinação para que seu tapete tenha a sua identidade.</p>
+      <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center mb-16">
+      Conheça as experiências dos nossos clientes e descubra por que grandes empresas confiam em nós.
+      </p>
 
       <Swiper
           spaceBetween={50}
