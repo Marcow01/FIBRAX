@@ -56,7 +56,7 @@ function Clientes() {
       <div className='flex flex-col mt-16'>
         <div className='mb-4 flex'>
           <img src={Isa} alt="" className='w-12 h-12' ref={boxRef3}/>
-          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 flex-grow' ref={boxRef4}>
+          <div className='p-4 rounded-lg bg-[#FF6100] ml-4 flex-grow' ref={boxRef4}>
             <p className='text-justify text-white'>O tapete é de qualidade e pode ser feito com sua marca. Fica lindo! Adorei.</p>
             <Rating className='mb-3 mt-2'>
               <Rating.Star />
@@ -70,7 +70,7 @@ function Clientes() {
         </div>
   
         <div className='mb-4 flex'>
-          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 flex-grow' ref={boxRef6}>
+          <div className='p-4 rounded-lg bg-[#FF6100] mr-4 flex-grow' ref={boxRef6}>
             <p className='text-justify text-white'>Produto de excelente qualidade, entrega dentro do prazo e atendimento cordial! Recomendo!</p>
             <Rating className='mb-3 mt-2'>
               <Rating.Star />
@@ -86,7 +86,7 @@ function Clientes() {
   
         <div className='mb-4 flex'>
           <img src={Roger} alt="" className='w-12 h-12' ref={boxRef7}/>
-          <div className='p-4 rounded-lg bg-[#2b2c34] ml-4 flex-grow' ref={boxRef8}>
+          <div className='p-4 rounded-lg bg-[#FF6100] ml-4 flex-grow' ref={boxRef8}>
             <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias 😍😍 …</p>
             <Rating className='mb-3 mt-2'>
               <Rating.Star />
@@ -100,7 +100,7 @@ function Clientes() {
         </div>
   
         <div className='flex'>
-          <div className='p-4 rounded-lg bg-[#2b2c34] mr-4 flex-grow' ref={boxRef10}>
+          <div className='p-4 rounded-lg bg-[#FF6100] mr-4 flex-grow' ref={boxRef10}>
             <p className='text-justify text-white'>Recebi os tapetes após um prazo maior que o informado para produção. Entretanto gostei bastante da qualidade do material!</p>
             <Rating className='mb-3 mt-2'>
               <Rating.Star />

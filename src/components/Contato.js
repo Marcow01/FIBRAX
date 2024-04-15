@@ -38,7 +38,7 @@ function Contato() {
 
         <div>
           <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl" ref={boxRef1}>
-            Entre em <span className="text-[#D0542E]">contato.</span>
+            Entre em <span className="text-[#FF6100]">contato.</span>
           </h1>
           <p class="lg:text-lg lg:w-4/5 text-1xl text-gray-400 mb-16" ref={boxRef2}>
           Entre em contato conosco e solicite seu orçamento personalizado hoje mesmo! Nossa equipe está pronta para atendê-lo e oferecer soluções sob medida para suas necessidades.
@@ -85,11 +85,11 @@ function Contato() {
               <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm text-gray-600">Mensagem <span className="text-[#D0542E]">*opcional </span></label>
+              <label for="message" class="leading-7 text-sm text-gray-600">Mensagem <span className="text-[#FF6100]">*opcional </span></label>
               <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
 
-            <button class="text-white bg-[#D0542E] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Enviar</button>
+            <button class="text-white bg-[#FF6100] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Enviar</button>
           
           </div>
         </div>

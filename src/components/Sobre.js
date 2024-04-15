@@ -24,7 +24,7 @@ function Sobre() {
   }, []);
 
   return (
-    <div className="flex justify-center bg-[#D0542E]">
+    <div className="flex justify-center bg-[#FF6100]">
       <section className="w-full md:w-9/12 mt-16 p-8 md:p-0 mb-16">
       <div className="flex flex-wrap items-center h-full">
 

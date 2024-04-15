@@ -48,7 +48,7 @@ function Descricao() {
 
   return (
     <div className='flex justify-center'>
-      <section class="body-font w-full md:w-9/12 mt-8 p-8 md:p-0 mb-32">
+      <section class="body-font w-full md:w-9/12 mt-4 p-8 md:p-0 mb-32">
       <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
     <div class="h-full rounded-lg overflow-hidden direita-400">
@@ -58,7 +58,7 @@ function Descricao() {
       
       <div class="px-2 py-1">
 
-        <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef2}>
+        <div className='bg-[#FF6100] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef2}>
           <IoMdColorPalette className='w-5 h-5'/>
         </div>
 
@@ -78,7 +78,7 @@ function Descricao() {
       </div>
 
       <div class="px-2 py-1">
-        <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef5}>
+        <div className='bg-[#FF6100] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef5}>
           <FaShieldHalved className='w-5 h-5'/>
         </div>
 
@@ -97,7 +97,7 @@ function Descricao() {
         <img class="lg:h-48 md:h-36 w-full object-cover object-center rounded-lg hover:scale-95 duration-150" src={Produtos2} alt="Imagem projeto TLOU2 │ TEHKNE" />
       </div>
       <div class="px-2 py-1">
-        <div className='bg-[#D0542E] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef8}>
+        <div className='bg-[#FF6100] mt-3 inline-block rounded-full mb-1 p-3 text-white' ref={boxRef8}>
           <FaPenNib className='w-5 h-5'/>
         </div>
         <div ref={boxRef9}>
