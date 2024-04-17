@@ -36,8 +36,8 @@ function Corpo() {
                 Nossos capachos personalizados são a chave para uma entrada que marca presença, garantindo que cada visita seja uma experiência <span className="text-[#FF6100] font-bold">memorável</span> e <span className="text-[#FF6100] font-bold">acolhedora</span>.
               </p>
               <div className="mt-5 mb-5">
-                <a className='bg-[#FF6100] px-4 py-2 rounded-lg text-white hover:bg-[#7C3001] duration-300 ease-in-out mr-2'>Saiba mais!</a>
-                <a className='bg-[#9CA3AF] px-4 py-2 rounded-lg text-white hover:bg-[#676767] duration-300 ease-in-out'>Contato</a>
+                <a className='bg-[#FF6100] px-4 py-2 rounded-lg text-white hover:bg-[#7C3001] duration-300 ease-in-out mr-2' href="https://wa.me/553193293970" target="_blank">Saiba mais!</a>
+                <a className='bg-[#9CA3AF] px-4 py-2 rounded-lg text-white hover:bg-[#676767] duration-300 ease-in-out' href="#contato">Contato</a>
               </div>
             </div>
           </div>

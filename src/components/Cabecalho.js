@@ -8,7 +8,7 @@ function Cabecalho() {
 
       <Navbar fluid rounded>
       <NavbarBrand  href="https://fibraxcapachos.com">
-        <img src={Logo} className="mr-3 h-6 sm:h-12" alt="Flowbite React Logo" />
+        <img src={Logo} className="mr-3 h-10 sm:h-12" alt="Flowbite React Logo" />
         {/*<span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>*/}
       </NavbarBrand>
       <NavbarToggle />
