@@ -2,6 +2,7 @@ import Isa from '../assets/imgs/clientes/isa.png';
 import Thiago from '../assets/imgs/clientes/thiago.png';
 import Roger from '../assets/imgs/clientes/roger.png';
 import Breno from "../assets/imgs/clientes/breno.png";
+import { IoIosArrowDown } from "react-icons/io";
 
 import { Rating } from "flowbite-react";
 
@@ -46,7 +47,7 @@ function Clientes() {
   }, []);
 
   return (
-    <div class="w-full md:w-1/3 md:p-0 px-8 mx-auto mb-16 mt-16" id='clientes'>
+    <div class="w-full md:w-1/3 md:p-0 px-8 mx-auto mb-10 mt-32" id='clientes'>
       <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center" ref={boxRef1}>
         Por que escolher <span className="text-[#FF6100]">FIBRAX?</span>
       </h1>
@@ -115,9 +116,18 @@ function Clientes() {
           </div>
           <img src={Breno} alt="" className='w-12 h-12' ref={boxRef9}/>
         </div>
+        
+        <a target="_blank" href='https://www.google.com/maps/place/FIBRAX+CAPACHOS+TAPETES+PERSONALIZADOS/@-19.9467783,-43.9851547,16.72z/data=!4m8!3m7!1s0xa69654cff94c05:0xa1acc98056dc4349!8m2!3d-19.9463753!4d-43.982054!9m1!1b1!16s%2Fg%2F12hngvxzc?entry=ttu'>
+        <div className='flex justify-center items-center text-[#FF6100] mt-10 font-medium'>
+          <a>Veja mais</a>
+          <IoIosArrowDown className='ml-2'/>
+        </div>
+        </a>
+
+        
       </div>
 
-      <a className='text-center text-[#FF6100]'>Veja mais</a>
+      
     </div>
   );
   

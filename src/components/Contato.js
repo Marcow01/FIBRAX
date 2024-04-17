@@ -68,9 +68,15 @@ function Contato() {
           </div>
 
           <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0" ref={boxRef4}>
-          <button  class="text-white bg-[#57D164] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mb-3">Whatsapp</button>
-          <button class="text-white insta border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mb-3">Instagram</button>
 
+          <a target="_blank" href='https://wa.me/553193293970' className='text-white bg-[#57D164] border-0 py-2 px-6 focus:outline-none hover:bg-[#2F7E37] cursor-pointer rounded text-lg mb-3 text-center duration-300 ease-in-out'>
+            Whatsapp
+          </a>
+
+          <a target="_blank" href='https://www.instagram.com/fibraxcapachos/' class="text-white insta border-0 py-2 px-6 focus:outline-none rounded text-lg mb-3 text-center hover:bg-[#FF0C4B] duration-300 ease-in-out cursor-pointer">
+            Instagram
+          </a>
+        
             <p class="leading-relaxed mb-3 text-gray-500 text-center mt-3">Ou nos envie uma mensagem!</p>
             <div class="relative mb-4">
               <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>

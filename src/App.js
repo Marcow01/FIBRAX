@@ -11,7 +11,7 @@ import Rodape from './components/Rodape';
 
 function App() {
   return (
-    <div className="">
+    <div className="Aplicacao">
       <Cabecalho></Cabecalho>
       <Corpo></Corpo>
       <Carrossel></Carrossel>

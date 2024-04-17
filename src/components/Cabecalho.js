@@ -14,16 +14,16 @@ function Cabecalho() {
       <NavbarToggle />
       <NavbarCollapse>
         <NavbarLink href="#inicio">
-          <a className='hover:text-[#FF6100]'>Início</a>
+          <a className='hover:text-[#FF6100] text-gray-400'>Início</a>
         </NavbarLink>
         <NavbarLink href="#produtos">
-          <a className='hover:text-[#FF6100]'>Produtos</a>
+          <a className='hover:text-[#FF6100] text-gray-400'>Produtos</a>
         </NavbarLink>
         <NavbarLink href="#sobre">
-          <a className='hover:text-[#FF6100]'>Sobre</a>
+          <a className='hover:text-[#FF6100] text-gray-400'>Sobre</a>
         </NavbarLink>
         <NavbarLink href="#clientes">
-          <a className='hover:text-[#FF6100]'>Clientes</a>
+          <a className='hover:text-[#FF6100] text-gray-400'>Clientes</a>
         </NavbarLink>
         <NavbarLink href="#contato"><a className='bg-[#FF6100] px-4 py-2 rounded-lg text-white hover:bg-[#7C3001] duration-300 ease-in-out'>Contato</a></NavbarLink>
 

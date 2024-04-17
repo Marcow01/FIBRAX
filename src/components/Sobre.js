@@ -1,4 +1,3 @@
-import { Button } from "flowbite-react";
 import Nota from '../assets/imgs/nota.png'; 
 import { FaArrowRight } from "react-icons/fa";
 import React, { useRef, useEffect } from "react";
@@ -38,7 +37,7 @@ function Sobre() {
         Com mais de 25 anos de experiência, a <span className="font-bold">FIBRAX CAPACHOS </span>se destaca como líder no setor de tapetes personalizados. Desde 1999, temos nos dedicado incansavelmente a oferecer qualidade excepcional a preços acessíveis, conquistando a confiança de clientes.  Ao longo dos anos, desenvolvemos uma reputação sólida e duradoura, conquistando a lealdade de uma base diversificada de clientes. Nosso compromisso contínuo com a inovação, qualidade e serviço excepcional nos diferencia.
         </p>
       
-        <a className='bg-white px-4 py-2 rounded-lg text-[#FF6100] cursor-pointer font-medium'>Instagram</a>
+        {/*<a className='bg-white px-4 py-2 rounded-lg text-[#FF6100] cursor-pointer font-medium'>Instagram</a>*/}
         
         </div>
 
