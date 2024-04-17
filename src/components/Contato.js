@@ -33,7 +33,7 @@ function Contato() {
   }, []);
 
   return (
-    <div className='w-full md:w-9/12 md:p-0 px-8 mx-auto mb-16 mt-16'>
+    <div className='w-full md:w-9/12 md:p-0 px-8 mx-auto mb-16 mt-16' id='contato'>
        <section>
 
         <div>

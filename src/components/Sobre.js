@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react";
 import Nota from '../assets/imgs/nota.png'; 
-
+import { FaArrowRight } from "react-icons/fa";
 import React, { useRef, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
@@ -24,7 +24,7 @@ function Sobre() {
   }, []);
 
   return (
-    <div className="flex justify-center bg-[#FF6100]">
+    <div className="flex justify-center bg-[#FF6100]" id="sobre">
       <section className="w-full md:w-9/12 mt-16 p-8 md:p-0 mb-16">
       <div className="flex flex-wrap items-center h-full">
 
@@ -34,11 +34,11 @@ function Sobre() {
           Conheça nossa equipe.
         </h1>
         
-        <p class="lg:text-lg text-1xl text-white text-justify" ref={boxRef2}>
-        Empenhados em entregar qualidade por um ótimo preço a <span className="font-bold">FIBRAX CAPACHOS </span>atua no mercado desde 2018, conquistando clientes e criando sua marca em tapetes personalizados. 
+        <p class="lg:text-lg text-1xl text-white text-justify mb-4" ref={boxRef2}>
+        Com mais de 25 anos de experiência, a <span className="font-bold">FIBRAX CAPACHOS </span>se destaca como líder no setor de tapetes personalizados. Desde 1999, temos nos dedicado incansavelmente a oferecer qualidade excepcional a preços acessíveis, conquistando a confiança de clientes.  Ao longo dos anos, desenvolvemos uma reputação sólida e duradoura, conquistando a lealdade de uma base diversificada de clientes. Nosso compromisso contínuo com a inovação, qualidade e serviço excepcional nos diferencia.
         </p>
-
-        <p className="text-white text-lg text-justify mt-5"></p>
+      
+        <a className='bg-white px-4 py-2 rounded-lg text-[#FF6100] cursor-pointer font-medium'>Instagram</a>
         
         </div>
 

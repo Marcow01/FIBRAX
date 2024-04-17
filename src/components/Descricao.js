@@ -83,8 +83,8 @@ function Descricao() {
         </div>
 
         <div ref={boxRef6}>
-          <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Variedade de cores</h1>
-          <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo.</p>
+          <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Material de alta qualidade</h1>
+          <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos emborrachados com resistência a grande tráfego, facilidade de higienização, aderência ao solo e resistência ao calor.</p>
         </div>
         
       </div>
@@ -101,8 +101,8 @@ function Descricao() {
           <FaPenNib className='w-5 h-5'/>
         </div>
         <div ref={boxRef9}>
-          <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Variedade de cores</h1>
-          <p class="leading-relaxed mb-3 text-justify text-gray-500">Capachos com diversas opções de cores para atender a identidade visual de sua marca com muito estilo.</p>
+          <h1 class="title-font text-lg font-medium text-gray-500 mb-3">Capachos personalizados</h1>
+          <p class="leading-relaxed mb-3 text-justify text-gray-500">Oferecemos capachos personalizados, projetados para atender às suas preferências individuais e criar uma primeira impressão memorável para qualquer visitante.</p>
         </div>
         
       </div>

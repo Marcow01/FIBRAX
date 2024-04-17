@@ -1,6 +1,8 @@
 import Isa from '../assets/imgs/clientes/isa.png';
 import Thiago from '../assets/imgs/clientes/thiago.png';
 import Roger from '../assets/imgs/clientes/roger.png';
+import Breno from "../assets/imgs/clientes/breno.png";
+
 import { Rating } from "flowbite-react";
 
 import React, { useRef, useEffect } from "react";
@@ -44,12 +46,12 @@ function Clientes() {
   }, []);
 
   return (
-    <div class="w-full md:w-1/2 md:p-0 px-8 mx-auto mb-16 mt-16">
+    <div class="w-full md:w-1/3 md:p-0 px-8 mx-auto mb-16 mt-16" id='clientes'>
       <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center" ref={boxRef1}>
         Por que escolher <span className="text-[#FF6100]">FIBRAX?</span>
       </h1>
   
-      <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center" ref={boxRef2}>
+      <p class="lg:text-lg mx-auto text-1xl text-gray-400 text-justify" ref={boxRef2}>
         Descubra o que nossos clientes estão dizendo sobre nós! Explore os testemunhos e depoimentos que destacam a qualidade excepcional.
       </p>
   
@@ -87,7 +89,7 @@ function Clientes() {
         <div className='mb-4 flex'>
           <img src={Roger} alt="" className='w-12 h-12' ref={boxRef7}/>
           <div className='p-4 rounded-lg bg-[#FF6100] ml-4 flex-grow' ref={boxRef8}>
-            <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias 😍😍 …</p>
+            <p className='text-justify text-white'>Atendimento 10, boa qualidade e cumprimento de prazo de entrega me entregaram com 3dias.</p>
             <Rating className='mb-3 mt-2'>
               <Rating.Star />
               <Rating.Star />
@@ -111,9 +113,11 @@ function Clientes() {
             </Rating>
             <p className='text-end text-white font-semibold'>Breno Anselmo</p>
           </div>
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjWcKsXka0y7nBaYoAAdH0QVzdMIHBnmMGzpj8867AzaO_7VjzYm=w36-h36-p-rp-mo-ba3-br100" alt="" className='w-12 h-12' ref={boxRef9}/>
+          <img src={Breno} alt="" className='w-12 h-12' ref={boxRef9}/>
         </div>
       </div>
+
+      <a className='text-center text-[#FF6100]'>Veja mais</a>
     </div>
   );
   

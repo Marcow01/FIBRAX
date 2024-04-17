@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Marca1 from '../assets/imgs/marcas/image 52.png';
-import Marca2 from '../assets/imgs/marcas/image 53.png';
-import Marca3 from '../assets/imgs/marcas/image 54.png';
-import Marca4 from '../assets/imgs/marcas/image 55.png';
+
+import OAB from '../assets/imgs/marcas/OAB.svg';
+import SUBWAY from '../assets/imgs/marcas/SUBWAY.svg';
+import CNA from '../assets/imgs/marcas/CNA.svg';
 
 function Marcas() {
   return (
@@ -41,7 +41,7 @@ function Marcas() {
       <div class="p-4 md:w-1/3">
     <div class="h-full rounded-lg overflow-hidden direita-400">
       <div>
-        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={Marca1} alt="Imagem projeto TLOU2 │ TEHKNE" />
+        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={OAB} alt="Imagem projeto TLOU2 │ TEHKNE" />
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@ function Marcas() {
   <div class="p-4 md:w-1/3">
     <div class="h-full rounded-lg overflow-hidden direita-400">
       <div> 
-        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={Marca1} alt="Imagem projeto TLOU2 │ TEHKNE" />
+        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={SUBWAY} alt="Imagem projeto TLOU2 │ TEHKNE" />
       </div>
 
     </div>
@@ -58,7 +58,7 @@ function Marcas() {
   <div class="p-4 md:w-1/3">
     <div class="h-full rounded-lg overflow-hidden direita-400">
       <div>
-        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={Marca1} alt="Imagem projeto TLOU2 │ TEHKNE" />
+        <img class="w-full h-auto object-cover object-center rounded-lg hover:scale-95 duration-150 " src={CNA} alt="Imagem projeto TLOU2 │ TEHKNE" />
       </div>
     </div>
   </div>

@@ -11,16 +11,26 @@ function Rodape() {
       <div className="w-full text-center border-none">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between border-none">
           <FooterBrand
-            href="https://flowbite.com"
+            href="https://fibraxcapachos.com"
             src={Logo}
             alt="Fibrax Logo"
           />
           <FooterLinkGroup>
-            <FooterLink href="#">Inicio</FooterLink>
-            <FooterLink href="#">Produtos</FooterLink>
-            <FooterLink href="#">Sobre</FooterLink>
-            <FooterLink href="#">Clientes</FooterLink>
-            <FooterLink href="#">Contato</FooterLink>
+            <FooterLink href="#inicio" className="no-underline">
+              <a className='hover:text-[#FF6100]'>Início</a>
+            </FooterLink>
+            <FooterLink href="#produtos">
+              <a className='hover:text-[#FF6100]'>Produtos</a>
+            </FooterLink>
+            <FooterLink href="#sobre">
+              <a className='hover:text-[#FF6100]'>Sobre</a>
+            </FooterLink>
+            <FooterLink href="#clientes">
+              <a className='hover:text-[#FF6100]'>Clientes</a>
+            </FooterLink>
+            <FooterLink href="#contato">
+              <a className='hover:text-[#FF6100]'>Contato</a>
+            </FooterLink>
           </FooterLinkGroup>
         </div>
         <FooterDivider />
@@ -28,10 +38,7 @@ function Rodape() {
           <Footer.Copyright href="#" by="Fibrax™" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
-            <Footer.Icon href="#" icon={BsGithub} />
-            <Footer.Icon href="#" icon={BsDribbble} />
+            <Footer.Icon href="https://www.instagram.com/fibraxcapachos/" icon={BsInstagram} />
           </div>
         </div>
       </div>

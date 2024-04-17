@@ -25,7 +25,7 @@ function Carrossel() {
   }, []);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id='produtos'>
 
       <section className="w-full md:w-9/12 mt-32 p-8 md:p-0">
       <h1 class="font-bold title-font mb-4 text-gray-400 lg:text-4xl text-3xl text-center" ref={boxRef1}> 
