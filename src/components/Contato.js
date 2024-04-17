@@ -1,9 +1,41 @@
 import '../App.css';
 import React, { useRef, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import bannerImage from '../assets/imgs/banner.png'; 
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contato() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [telefone, setTelefone] = useState('');
+  
+  function send(e){
+    e.preventDefault();
+
+    if (name === ''|| email === '' || telefone === ''){
+      alert("preencha os campos");
+      return;
+    }
+
+    const template = {
+      from_name: name,
+      message: message,
+      email: email,
+      telefone: telefone
+    }
+
+    emailjs.send('service_ddqlu6m', 'template_kh2mnfj', template, 'GFFf3ghDaC1Bxrxpt')
+    .then((response) => {
+      console.log('email enviado');
+      setEmail('');
+      setMessage('');
+      setTelefone('');
+      setName('');
+    })
+
+  }
+
   const boxRef1 = useRef(null);
   const boxRef2 = useRef(null);
   const boxRef3 = useRef(null);
@@ -78,24 +110,45 @@ function Contato() {
           </a>
         
             <p class="leading-relaxed mb-3 text-gray-500 text-center mt-3">Ou nos envie uma mensagem!</p>
-            <div class="relative mb-4">
-              <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>
-              <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-600">Telefone</label>
-              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-            <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm text-gray-600">Mensagem <span className="text-[#FF6100]">*opcional </span></label>
-              <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
 
-            <button class="text-white bg-[#FF6100] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Enviar</button>
+            <form className="form" onSubmit={send}>
+            <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>
+            <input 
+              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="text"
+              placeholder=""
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+            />
+            
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input 
+              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="email"
+              placeholder=""
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+
+            <label for="email" class="leading-7 text-sm text-gray-600">Telefone</label>
+            <input 
+              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="text"
+              placeholder=""
+              onChange={(e) => setTelefone(e.target.value)}
+              value={telefone}
+            />
+
+            <label for="message" class="leading-7 text-sm text-gray-600">Mensagem <span className="text-[#FF6100]">*opcional </span></label>
+            <textarea 
+              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              placeholder=""
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+            />
+
+            <input className="text-white bg-[#FF6100] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg w-full" type="submit" value="Enviar" />
+          </form>
           
           </div>
         </div>
