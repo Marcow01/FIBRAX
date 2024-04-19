@@ -1,9 +1,11 @@
 import Slide1 from '../assets/imgs/slide1.svg';
 import Slide2 from '../assets/imgs/slide2.svg';
 import Slide3 from '../assets/imgs/slide3.svg';
-
+import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import '../App.css';
 import 'swiper/css';
+import 'swiper/css/pagination';
 import React, { useRef, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
@@ -40,11 +42,16 @@ function Carrossel() {
       </p>
 
         <Swiper
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            pagination={true} 
+            loop={true}
+            modules={[Pagination, Autoplay]} 
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            className='mt-10 rounded-lg'
+            className='mt-10 rounded-lg cursor-grab'
             ref={boxRef3}
           >
             <SwiperSlide>
