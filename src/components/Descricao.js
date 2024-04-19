@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Produtos0 from '../assets/imgs/produtos0.png'
-import Produtos1 from '../assets/imgs/produtos1.png'
-import Produtos2 from '../assets/imgs/produtos2.png'
+import Produtos0 from '../assets/imgs/produtos0.svg'
+import Produtos1 from '../assets/imgs/produtos1.svg'
+import Produtos2 from '../assets/imgs/produtos2.svg'
 
 import { IoMdColorPalette } from "react-icons/io";
 import { FaShieldHalved } from "react-icons/fa6";

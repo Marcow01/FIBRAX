@@ -1,4 +1,7 @@
-import Banner from '../assets/imgs/bannerteste.png';
+import Slide1 from '../assets/imgs/slide1.svg';
+import Slide2 from '../assets/imgs/slide2.svg';
+import Slide3 from '../assets/imgs/slide3.svg';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import React, { useRef, useEffect } from "react";
@@ -45,13 +48,13 @@ function Carrossel() {
             ref={boxRef3}
           >
             <SwiperSlide>
-              <img src={Banner} alt="" />
+              <img src={Slide1} alt="Slide 1 | Capachos personalizados FIBRAX" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Banner} alt="" />
+              <img src={Slide2} alt="Slide 2 | Tapetes sanitizantes FIBRAX" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={Banner} alt="" />
+              <img src={Slide3} alt="Slide 3 | Fita antiderrapante FIBRAX" />
             </SwiperSlide>
           </Swiper>
       </section>

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import '../App.css'
 
 import OAB from '../assets/imgs/marcas/OAB.svg';
 import SUBWAY from '../assets/imgs/marcas/SUBWAY.svg';
@@ -15,29 +15,6 @@ function Marcas() {
       <p class="lg:text-lg lg:w-4/5 mx-auto text-1xl text-gray-400 text-center mb-16">
       Conheça as experiências dos nossos clientes e descubra por que grandes empresas confiam em nós.
       </p>
-
-      {/* }
-      <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide className='p-4'>
-            <img src={Marca1} alt="" className='grayscale hover:grayscale-0 hover:scale-95 duration-150 w-72 h-24'/>
-          </SwiperSlide>
-          <SwiperSlide className='p-4'>
-            <img src={Marca4} alt="" className='grayscale hover:grayscale-0 hover:scale-95 duration-150 w-72 h-24'/>
-          </SwiperSlide>
-          <SwiperSlide className='p-4'>
-            <img src={Marca1} alt="" className='grayscale hover:grayscale-0 hover:scale-95 duration-150 w-72 h-24'/>
-          </SwiperSlide>
-          <SwiperSlide className='p-4'>
-            <img src={Marca4} alt="" className='grayscale hover:grayscale-0 hover:scale-95 duration-150 w-72 h-24'/>
-          </SwiperSlide>
-        </Swiper>
-
-  */}
 
       <div className='flex items-center gap-5 flex-wrap md:flex-nowrap justify-center'>
         <div class="h-full rounded-lg overflow-hidden w-32 sm:w-auto">

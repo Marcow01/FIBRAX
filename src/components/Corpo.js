@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Button } from "flowbite-react";
 import ScrollReveal from "scrollreveal";
-import bannerImage from '../assets/imgs/banner.png'; 
+import bannerImage from '../assets/imgs/banner.svg'; 
 
 function Corpo() {
   const boxRef1 = useRef(null);

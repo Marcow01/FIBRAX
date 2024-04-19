@@ -15,3 +15,9 @@ html{
 .Aplicacao{
   scroll-behavior: smooth;
 }
+
+.swipercss{
+
+  display: flex;
+  align-items: center;
+}
