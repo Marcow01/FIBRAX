@@ -42,7 +42,9 @@ function Rodape() {
         </div>
       </div>
     </Footer>
-        
+    <div className="text-gray-400 text-center mb-2">
+      Desenvolvido por <a href="https://marcow.vercel.app/" target="_blank" className="text-[#FF6100] font-bold cursor-pointer">Marcow.</a>
+    </div>
       </section>
     </div>
   );

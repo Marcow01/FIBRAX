@@ -1,6 +1,8 @@
-import Slide1 from '../assets/imgs/slide1.svg';
-import Slide2 from '../assets/imgs/slide2.svg';
-import Slide3 from '../assets/imgs/slide3.svg';
+import Slide1 from '../assets/imgs/slide/slide1.svg';
+import Slide2 from '../assets/imgs/slide/slide2.svg';
+import Slide3 from '../assets/imgs/slide/slide3.svg';
+import Slide4 from '../assets/imgs/slide/slide4.svg';
+import Slide5 from '../assets/imgs/slide/slide5.svg';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../App.css';
@@ -62,6 +64,12 @@ function Carrossel() {
             </SwiperSlide>
             <SwiperSlide>
               <img src={Slide3} alt="Slide 3 | Fita antiderrapante FIBRAX" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Slide4} alt="Slide 4 | Capachos personalizados FIBRAX" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Slide5} alt="Slide 5 | Capachos personalizados FIBRAX" />
             </SwiperSlide>
           </Swiper>
       </section>
